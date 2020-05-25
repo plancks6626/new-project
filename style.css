@@ -6,3 +6,11 @@ body {
   color: #F2F2F2;
   background-color: #262622;
 }
+
+.slidecontainer {
+    display: none;
+}
+
+.slidecontainer.is-visible {
+    display: block;
+}
