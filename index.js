@@ -1,7 +1,6 @@
-let score = 0;
+let exp = 0;
 
-
-scorePoints() {
-    score ++;
-    document.getElementById('score').innerHTML = score;
+function gainExp() {
+    exp++;
+    document.getElementById('exp').innerHTML = exp;
 }
