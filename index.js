@@ -1,5 +1,7 @@
 let lifeforms = 0;
 
+//innit toggleSlider
+toggleSlider();
 
 function reproduce() {
     lifeforms++;
@@ -15,24 +17,18 @@ function evolve(phase) {
 
 let phaseOne = true;
 if (lifeforms >= 10&& phaseOne){
-    setInterval(photosynthesis)
+    setInterval(function(){
+
+    }, 1000)
     phaseOne = false;
 }
 
-// var show = function(elem) {
-//   elem.classList.add('is-visible');
-// };
-//
-// var hide = function(elem) {
-//   elem.classList.remove('is-visible');
-// };
-//
-// var toggle = function (elem) {
-//   elem.classList.toggle('is-visible');
-// };
-//
-// hide(document.getElementsByClassName("slidecontainer"));
-//
-// if (lifeforms == 1){
-//     show(document.getElementsByClassName("slidecontainer"));
-// }
+function toggleSlider() {
+  var elem = document.getElementById("slidecontainer");
+    if (elem.style.display === "none"){
+        elem.style.display = "block";
+    }
+    else {
+        elem.style.display = "none";
+  }
+}

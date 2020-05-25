@@ -7,10 +7,6 @@ body {
   background-color: #262622;
 }
 
-.slidecontainer {
-    display: none;
-}
-
-.slidecontainer.is-visible {
-    display: block;
+#slidecontainer {
+    
 }
